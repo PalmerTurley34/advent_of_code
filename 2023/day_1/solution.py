@@ -20,7 +20,7 @@ def main(part=1):
     ]
     final_numbers = [int(nums[0] + nums[-1]) for nums in digits]
     total_sum = sum(final_numbers)
-    print(total_sum)
+    print(f'Part {part}: {total_sum}')
 
 if __name__ == '__main__':
     main()
