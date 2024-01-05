@@ -77,7 +77,7 @@ def get_all_modules(module_defs: list[str]) -> dict[str, Module]:
     all_modules['button'] = Module(ModuleType.BUTTON, outputs=['broadcaster'])
     return all_modules
 
-def count_pulses(all_modules: dict[str, Module]) -> (int, int):
+def count_pulses(all_modules: dict[str, Module]) -> tuple[int, int]:
     '''
     first int is high count, second is low count
     '''
